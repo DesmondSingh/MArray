@@ -4,7 +4,7 @@
 #' @param n_features The number of genes to simulate (must be a positive, even integer value)
 #' @param with_seed A numeric input to set the seed of the session (defaults to '8675309')
 #'
-#' @return A list of 1 matrix ('marray' - simulated metadata), and 2 data frames (1 for sample metadata -- 'pmeta' -- and another for gene metadata -- 'fmeta')
+#' @return A list of 1 matrix ('marray' - simulated Micro aeray data), and 2 data frames (1 for sample metadata -- 'pmeta' -- and another for gene metadata -- 'fmeta')
 #' @export
 #' @importFrom stats rnorm
 #'
