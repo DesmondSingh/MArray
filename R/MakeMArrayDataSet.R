@@ -1,11 +1,12 @@
 #' @title Simulate a Micro array data set with accompanying metadata
-#' @description Simulate microarray data by randomly drawing values from a normal distribution centered at 10 with a standard deviation of 5
+#' @description Simulate Micro array data by randomly drawing values from a normal distribution centered at 10 with a standard deviation of 5
 #' @param n_samples The number of samples to simulate (must be a positive, even integer value that is no greater than '26')
 #' @param n_features The number of genes to simulate (must be a positive, even integer value)
 #' @param with_seed A numeric input to set the seed of the session (defaults to '8675309')
 #'
 #' @return A list of 1 matrix ('marray' - simulated metadata), and 2 data frames (1 for sample metadata -- 'pmeta' -- and another for gene metadata -- 'fmeta')
 #' @export
+#' @importFrom stats rnorm
 #'
 #' @examples
 #' MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
