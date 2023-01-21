@@ -14,7 +14,7 @@ MakeMArrayDataSet(n_samples = 10L, n_features = 6L, with_seed = 8675309)
 \item{with_seed}{A numeric input to set the seed of the session (defaults to '8675309')}
 }
 \value{
-A list of 1 matrix ('marray' - simulated metadata), and 2 data frames (1 for sample metadata -- 'pmeta' -- and another for gene metadata -- 'fmeta')
+A list of 1 matrix ('marray' - simulated Micro array data), and 2 data frames (1 for sample metadata -- 'pmeta' -- and another for gene metadata -- 'fmeta')
 }
 \description{
 Simulate Micro array data by randomly drawing values from a normal distribution centered at 10 with a standard deviation of 5
