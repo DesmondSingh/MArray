@@ -15,8 +15,8 @@ MakeMArrayDataSet <- function(n_samples = 10L, n_features = 6L, with_seed = 8675
   stopifnot("Inputs must be numeric values" = (is.numeric(n_samples) & is.numeric(n_features)))
   stopifnot("Inputs must be positive values" = ((n_samples > 0) & (n_features > 0)))
   stopifnot("Inputs must be integer values" = (is.integer(n_samples) & is.integer(n_features)))
-  stopifnot("Inputs must be divisible by 2" = ((n_samples %% 2 == 0) & (n_features %% 2 == 0)))
   stopifnot("'n_samples' cannot be larger than 26" = (n_samples <= 26))
+  stopifnot("Inputs must be divisible by 2" = ((n_samples %% 2 == 0) & (n_features %% 2 == 0)))
   stopifnot("'with_seed' must be null or numeric type"=(is.null(with_seed) | is.numeric(with_seed)))
 
   if(!is.null(with_seed)){set.seed(with_seed)}

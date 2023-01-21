@@ -23,22 +23,22 @@ test_that("MakeMArray works when it should.", {
 
 
 
-test_that("MakeMArray works when it shouldn't.", {
+test_that("MakeMArray doesn't work when it shouldn't.", {
 
-  expect_error(MakeMArrayDataSet(n_samples = 10 - 1))
-  expect_error(MakeMArrayDataSet(n_features = 6 - 1))
+  expect_error(MakeMArrayDataSet(n_samples = 9L), "Inputs must be divisible by 2")
+  expect_error(MakeMArrayDataSet(n_features = 5L), "Inputs must be divisible by 2")
 
-  expect_error(MakeMArrayDataSet(n_samples = 10))
-  expect_error(MakeMArrayDataSet(n_features = 6))
+  expect_error(MakeMArrayDataSet(n_samples = 10), "Inputs must be integer values")
+  expect_error(MakeMArrayDataSet(n_features = 6), "Inputs must be integer values")
 
-  expect_error(MakeMArrayDataSet(n_samples = -10))
-  expect_error(MakeMArrayDataSet(n_features = -6))
+  expect_error(MakeMArrayDataSet(n_samples = -10L), "Inputs must be positive values")
+  expect_error(MakeMArrayDataSet(n_features = -6L), "Inputs must be positive values")
 
-  expect_error(MakeMArrayDataSet(n_samples = 27))
+  expect_error(MakeMArrayDataSet(n_samples = 27L), "'n_samples' cannot be larger than 26")
 
-  expect_error(MakeMArrayDataSet(n_samples = "toy"))
-  expect_error(MakeMArrayDataSet(n_features = "toy"))
-  expect_error(MakeMArrayDataSet(with_seed = "toy"))
+  expect_error(MakeMArrayDataSet(n_samples = "toy"), "Inputs must be numeric values")
+  expect_error(MakeMArrayDataSet(n_features = "toy"), "Inputs must be numeric values")
+  expect_error(MakeMArrayDataSet(with_seed = "toy"), "'with_seed' must be null or numeric type")
 
 })
 
