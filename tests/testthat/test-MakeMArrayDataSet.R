@@ -1,4 +1,4 @@
-test_that("MakeMArray works when it should (and doesn't when it shouldn't)", {
+test_that("MakeMArray works when it should.", {
 
   expect_no_error(MakeMArrayDataSet())
   expect_no_error(MakeMArrayDataSet(n_samples = 10L,
@@ -19,6 +19,11 @@ test_that("MakeMArray works when it should (and doesn't when it shouldn't)", {
   expect_equal(nrow(ma[["marray"]]), nrow(ma[["fmeta"]]))
   expect_equal(ncol(ma[["marray"]]), nrow(ma[["pmeta"]]))
 
+})
+
+
+
+test_that("MakeMArray works when it shouldn't.", {
 
   expect_error(MakeMArrayDataSet(n_samples = 10 - 1))
   expect_error(MakeMArrayDataSet(n_features = 6 - 1))
@@ -35,5 +40,7 @@ test_that("MakeMArray works when it should (and doesn't when it shouldn't)", {
   expect_error(MakeMArrayDataSet(n_features = "toy"))
   expect_error(MakeMArrayDataSet(with_seed = "toy"))
 
-
 })
+
+
+
