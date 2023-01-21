@@ -4,7 +4,7 @@ Title: Simulate Micro Array Data & Meta Data
 Version: 0.1.0
 Author: Desmond Singh
 Maintainer: The package maintainer <d6ahuja@uwaterloo.ca>
-Description: Simulates Micro Array Data  & Meta Data
+Description: Simulates Micro Array Data  & Meta Data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
