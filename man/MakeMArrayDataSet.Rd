@@ -17,7 +17,7 @@ MakeMArrayDataSet(n_samples = 10L, n_features = 6L, with_seed = 8675309)
 A list of 1 matrix ('marray' - simulated metadata), and 2 data frames (1 for sample metadata -- 'pmeta' -- and another for gene metadata -- 'fmeta')
 }
 \description{
-Simulate microarray data by randomly drawing values from a normal distribution centered at 10 with a standard deviation of 5
+Simulate Micro array data by randomly drawing values from a normal distribution centered at 10 with a standard deviation of 5
 }
 \examples{
 MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
