@@ -6,6 +6,7 @@
 #'
 #' @return A list of 1 matrix ('marray' - simulated metadata), and 2 data frames (1 for sample metadata -- 'pmeta' -- and another for gene metadata -- 'fmeta')
 #' @export
+#' @importFrom("stats", "rnorm")
 #'
 #' @examples
 #' MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
