@@ -125,28 +125,3 @@ setMethod("show",
             invisible(NULL)
           })
 
-
-#' Subset method for an MArray object
-#'
-#' @param object An object of class MArray
-#' @param row_num Row index value
-#' @param col_num Column index value
-#'
-#' @return A subset of an original MArray object
-#' @export
-#' @importFrom method setMethod
-#'
-#' @examples
-#' toy <- MArray::MakeMArrayDataSet()
-#' toy_ma <-MArray(marray = toy$marray, fmeta = toy$fmeta, pmeta = toy$pmeta)
-#' sub_toy_ma <- toy_ma[2,3]
-#' show(sub_toy_ma)
-setMethod("[", "MArray",
-          function(object,row_num,col_num,drop="missing") {
-            .marray <- object@marray[row_num, col_num]
-            .pmeta <- object@pmeta[col_num, ]
-            .fmeta <- object@fmeta[row_num, ]
-            MArray(marray = .marray,
-                   fmeta = .fmeta,
-                   pmeta = .pmeta)
-          })
