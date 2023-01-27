@@ -4,6 +4,7 @@
 #' @param pmeta dataframe
 #' @param fmeta dataframe
 #'
+#' @rdname MArray
 #' @return Object of clas "MArray"
 #' @export
 #' @importFrom methods setClass
