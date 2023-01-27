@@ -1,5 +1,18 @@
-#' @rdname MArray
+#' Constructor for making an instance of an 'MArray' object
+#'
+#' @param marray matrix
+#' @param pmeta dataframe
+#' @param fmeta dataframe
+#'
+#' @return Object of clas "MArray"
 #' @export
+#' @importFrom methods setClass
+#'
+#' @examples
+#' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
+#' ma_obj <- MArray(marray = ma$marray, fmeta = ma$fmeta, pmeta = ma$pmeta)
+#' show(ma_obj)
+
 MArray <- setClass("MArray",
 
                    slots = c(marray = "matrix",
@@ -37,3 +50,5 @@ MArray <- setClass("MArray",
                    }
 
 )
+
+
