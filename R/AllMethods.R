@@ -4,7 +4,7 @@
 #'
 #' @return A matrix of Micro array data
 #' @export
-#' @importFrom methods setMethod
+#' @importFrom methods setMethod new validObject
 #'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
@@ -18,7 +18,7 @@ setMethod("marray", "MArray", function(object){object@marray})
 #'
 #' @return A dataframe of sample meta data
 #' @export
-#' @importFrom methods setMethod
+#' @importFrom methods setMethod new validObject
 #'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
@@ -32,7 +32,7 @@ setMethod("pmeta", "MArray", function(object) object@pmeta)
 #'
 #' @return A dataframe of feature meta data
 #' @export
-#' @importFrom methods setMethod
+#' @importFrom methods setMethod new validObject
 #'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
@@ -47,7 +47,7 @@ setMethod("fmeta", "MArray", function(object) object@fmeta)
 #'
 #' @return An MArray object with its 'marray' slot updated
 #' @export
-#' @importFrom methods setMethod
+#' @importFrom methods setMethod new validObject
 #'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
@@ -68,7 +68,7 @@ setMethod("marray<-", "MArray",
 #'
 #' @return An MArray object with its 'fmeta' slot updated
 #' @export
-#' @importFrom methods setMethod
+#' @importFrom methods setMethod new validObject
 #'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
@@ -89,7 +89,7 @@ setMethod("fmeta<-", "MArray",
 #'
 #' @return An MArray object with its 'pmeta' slot updated
 #' @export
-#' @importFrom methods setMethod
+#' @importFrom methods setMethod new validObject
 #'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
@@ -110,7 +110,7 @@ setMethod("pmeta<-", "MArray",
 #'
 #' @return Text describing the dimensions of an MArray object
 #' @export
-#' @importFrom methods setMethod
+#' @importFrom methods setMethod new validObject
 #'
 #' @examples
 #' toy <- MArray::MakeMArrayDataSet()
