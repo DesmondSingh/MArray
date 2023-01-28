@@ -1,11 +1,8 @@
 #' @title Accessor function for the 'marray' slot of an MArray object
-#'
 #' @param object An object of class MArray
-#'
 #' @return A matrix of Micro array data
 #' @export
 #' @importFrom methods setMethod new validObject show
-#'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
 #' ma_obj <- MArray(marray = ma$marray, fmeta = ma$fmeta, pmeta = ma$pmeta)
@@ -13,13 +10,10 @@
 setMethod("marray", "MArray", function(object){object@marray})
 
 #' @title Accessor function for the 'pmeta' slot of an MArray object
-#'
 #' @param object An object of class MArray
-#'
 #' @return A dataframe of sample meta data
 #' @export
 #' @importFrom methods setMethod new validObject show
-#'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
 #' ma_obj <- MArray(marray = ma$marray, fmeta = ma$fmeta, pmeta = ma$pmeta)
@@ -27,13 +21,10 @@ setMethod("marray", "MArray", function(object){object@marray})
 setMethod("pmeta", "MArray", function(object) object@pmeta)
 
 #' @title Accessor function for the 'fmeta' slot of an MArray object
-#'
 #' @param object An object of class MArray
-#'
 #' @return A dataframe of feature meta data
 #' @export
 #' @importFrom methods setMethod new validObject show
-#'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
 #' ma_obj <- MArray(marray = ma$marray, fmeta = ma$fmeta, pmeta = ma$pmeta)
@@ -41,14 +32,11 @@ setMethod("pmeta", "MArray", function(object) object@pmeta)
 setMethod("fmeta", "MArray", function(object) object@fmeta)
 
 #' @title Replacement method for the 'marray' slot of an MArray object
-#'
 #' @param object An object of class MArray
 #' @param value An item you wish to assign to the 'marray' slot
-#'
 #' @return An MArray object with its 'marray' slot updated
 #' @export
 #' @importFrom methods setMethod new validObject show
-#'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
 #' ma_obj <- MArray(marray = ma$marray, fmeta = ma$fmeta, pmeta = ma$pmeta)
@@ -62,14 +50,11 @@ setMethod("marray<-", "MArray",
 
 
 #' @title Replacement method for the 'fmeta' slot of an MArray object
-#'
 #' @param object An object of class MArray
 #' @param value An item you wish to assign to the 'fmeta' slot
-#'
 #' @return An MArray object with its 'fmeta' slot updated
 #' @export
 #' @importFrom methods setMethod new validObject show
-#'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
 #' ma2 <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 309)
@@ -83,14 +68,11 @@ setMethod("fmeta<-", "MArray",
           })
 
 #' @title Replacement method for the 'pmeta' slot of an MArray object
-#'
 #' @param object An object of class MArray
 #' @param value An item you wish to assign to the 'pmeta' slot
-#'
 #' @return An MArray object with its 'pmeta' slot updated
 #' @export
 #' @importFrom methods setMethod new validObject show
-#'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
 #' ma2 <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 309)
@@ -105,13 +87,10 @@ setMethod("pmeta<-", "MArray",
 
 
 #' @title Show method for an MArray object
-#'
 #' @param object An object of class MArray
-#'
 #' @return Text describing the dimensions of an MArray object
 #' @export
 #' @importFrom methods setMethod new validObject show
-#'
 #' @examples
 #' toy <- MArray::MakeMArrayDataSet()
 #' toy_ma <-MArray(marray = toy$marray, fmeta = toy$fmeta, pmeta = toy$pmeta)
@@ -127,15 +106,12 @@ setMethod("show",
 
 
 #' @title Subsetting MArray objects
-#'
 #' @param x An object of class "MArray"
 #' @param i A row index value
 #' @param j A column index value
 #' @param drop Set to 'missing' to ignore irrelevant arguments
-#'
 #' @return A subset of an original "MArray" object
 #' @export
-#'
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
 #' ma_obj <- MArray(marray = ma$marray, fmeta = ma$fmeta, pmeta = ma$pmeta)
