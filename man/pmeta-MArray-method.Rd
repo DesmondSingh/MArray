@@ -6,9 +6,6 @@
 \usage{
 \S4method{pmeta}{MArray}(object)
 }
-\arguments{
-\item{object}{An object of class MArray}
-}
 \value{
 A dataframe of sample meta data
 }

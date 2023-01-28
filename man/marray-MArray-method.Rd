@@ -6,9 +6,6 @@
 \usage{
 \S4method{marray}{MArray}(object)
 }
-\arguments{
-\item{object}{An object of class MArray}
-}
 \value{
 A matrix of Micro array data
 }
