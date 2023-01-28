@@ -125,6 +125,23 @@ setMethod("show",
             invisible(NULL)
           })
 
+
+#' Subsetting MArray objects
+#'
+#' @param x An object of class "MArray"
+#' @param i A row index value
+#' @param j A column index value
+#' @param drop Set to 'missing' to ignore irrelevant arguments
+#'
+#' @return A subset of an original "MArray" object
+#' @export
+#'
+#' @examples
+#' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
+#' ma_obj <- MArray(marray = ma$marray, fmeta = ma$fmeta, pmeta = ma$pmeta)
+#' sub_ma_obj <- ma_obj[1:3,1:4]
+#' show(sub_ma_obj)
+
 setMethod("[", "MArray",
           function(x,i,j,drop="missing") {
             .marray <- x@marray[i, j]
