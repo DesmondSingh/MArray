@@ -1,8 +1,8 @@
-#' @title Accessor function for the 'marray' slot of an MArray object
+#' @title Accessor function for the 'mdata' slot of an MArray object
 #' @param object An object of class MArray
-#' @rdname marray
+#' @rdname mdata
 #' @export
-setGeneric("marray", function(object) standardGeneric("marray"))
+setGeneric("mdata", function(object) standardGeneric("mdata"))
 
 #' @title Accessor function for the 'pmeta' slot of an MArray object
 #' @param object An object of class MArray
@@ -16,12 +16,12 @@ setGeneric("pmeta", function(object) standardGeneric("pmeta"))
 #' @export
 setGeneric("fmeta", function(object) standardGeneric("fmeta"))
 
-#' @title Replacement method for the 'marray' slot of an MArray object
+#' @title Replacement method for the 'mdata' slot of an MArray object
 #' @param object An object of class MArray
 #' @param value Replacement item
-#' @rdname marray
+#' @rdname mdata
 #' @export
-setGeneric("marray<-", function(object, value) standardGeneric("marray<-"))
+setGeneric("mdata<-", function(object, value) standardGeneric("mdata<-"))
 
 #' @title Replacement method for the 'fmeta' slot of an MArray object
 #' @param object An object of class MArray
