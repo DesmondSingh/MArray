@@ -9,6 +9,11 @@ marray(object)
 
 marray(object) <- value
 }
+\arguments{
+\item{object}{An object of class MArray}
+
+\item{value}{Replacement item}
+}
 \description{
 Accessor function for the 'marray' slot of an MArray object
 

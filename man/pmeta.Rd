@@ -9,6 +9,11 @@ pmeta(object)
 
 pmeta(object) <- value
 }
+\arguments{
+\item{object}{An object of class MArray}
+
+\item{value}{Replacement item}
+}
 \description{
 Accessor function for the 'pmeta' slot of an MArray object
 
