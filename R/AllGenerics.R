@@ -2,7 +2,7 @@
 #' @param object An object of class MArray
 #' @rdname marray
 #' @export
-setGeneric("marray", function(object, ...) standardGeneric("marray"))
+setGeneric("marray", function(object) standardGeneric("marray"))
 
 #' @title Accessor function for the 'pmeta' slot of an MArray object
 #' @param object An object of class MArray
