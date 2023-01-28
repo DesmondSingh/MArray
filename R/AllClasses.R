@@ -2,14 +2,16 @@
 #' @param marray matrix
 #' @param pmeta dataframe
 #' @param fmeta dataframe
-#' @rdname MArray
 #' @return Object of class "MArray"
-#' @export
-#' @importFrom methods setClass
+#' @aliases MArray
+#' @docType class
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
 #' ma_obj <- MArray(marray = ma$marray, fmeta = ma$fmeta, pmeta = ma$pmeta)
 #' show(ma_obj)
+#' @rdname MArray
+#' @importFrom methods setClass
+#' @export
 
 MArray <- setClass("MArray",
                    slots = c(marray = "matrix",
