@@ -8,7 +8,12 @@
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
 #' ma_obj <- MArray(marray = ma$marray, fmeta = ma$fmeta, pmeta = ma$pmeta)
 #' marray(ma_obj)
-setMethod("marray", "MArray", function(object){object@marray})
+setMethod("marray", "MArray", function(object){
+
+  stopifnot("'marray()' only accepts 'MArray' objects"=class(object) == "MArray")
+
+  object@marray
+  })
 
 #' @title Accessor function for the 'pmeta' slot of an MArray object
 #' @param object An object of class MArray
