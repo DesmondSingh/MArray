@@ -1,4 +1,4 @@
-#' Accessor function for the 'marray' slot of an MArray object
+#' @title Accessor function for the 'marray' slot of an MArray object
 #'
 #' @param object An object of class MArray
 #'
@@ -12,7 +12,7 @@
 #' marray(ma_obj)
 setMethod("marray", "MArray", function(object){object@marray})
 
-#' Accessor function for the 'pmeta' slot of an MArray object
+#' @title Accessor function for the 'pmeta' slot of an MArray object
 #'
 #' @param object An object of class MArray
 #'
@@ -26,7 +26,7 @@ setMethod("marray", "MArray", function(object){object@marray})
 #' pmeta(ma_obj)
 setMethod("pmeta", "MArray", function(object) object@pmeta)
 
-#' Accessor function for the 'fmeta' slot of an MArray object
+#' @title Accessor function for the 'fmeta' slot of an MArray object
 #'
 #' @param object An object of class MArray
 #'
@@ -40,7 +40,7 @@ setMethod("pmeta", "MArray", function(object) object@pmeta)
 #' fmeta(ma_obj)
 setMethod("fmeta", "MArray", function(object) object@fmeta)
 
-#' Replacement method for the 'marray' slot of an MArray object
+#' @title Replacement method for the 'marray' slot of an MArray object
 #'
 #' @param object An object of class MArray
 #' @param value An item you wish to assign to the 'marray' slot
@@ -61,7 +61,7 @@ setMethod("marray<-", "MArray",
           })
 
 
-#' Replacement method for the 'fmeta' slot of an MArray object
+#' @title Replacement method for the 'fmeta' slot of an MArray object
 #'
 #' @param object An object of class MArray
 #' @param value An item you wish to assign to the 'fmeta' slot
@@ -82,7 +82,7 @@ setMethod("fmeta<-", "MArray",
               return(object)
           })
 
-#' Replacement method for the 'pmeta' slot of an MArray object
+#' @title Replacement method for the 'pmeta' slot of an MArray object
 #'
 #' @param object An object of class MArray
 #' @param value An item you wish to assign to the 'pmeta' slot
@@ -104,7 +104,7 @@ setMethod("pmeta<-", "MArray",
           })
 
 
-#' Show method for an MArray object
+#' @title Show method for an MArray object
 #'
 #' @param object An object of class MArray
 #'
@@ -126,7 +126,7 @@ setMethod("show",
           })
 
 
-#' Subsetting MArray objects
+#' @title Subsetting MArray objects
 #'
 #' @param x An object of class "MArray"
 #' @param i A row index value

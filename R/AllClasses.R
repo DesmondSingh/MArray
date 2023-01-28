@@ -1,4 +1,4 @@
-#' Constructor for making an instance of an 'MArray' object
+#' @title Constructor for making an instance of an 'MArray' object
 #'
 #' @param marray matrix
 #' @param pmeta dataframe
