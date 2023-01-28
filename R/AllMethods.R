@@ -9,11 +9,6 @@
 #' ma_obj <- MArray(marray = ma$marray, fmeta = ma$fmeta, pmeta = ma$pmeta)
 #' marray(ma_obj)
 setMethod("marray", "MArray", function(object){
-
-  if(object == "apple"){
-    stop("Object must NOT be 'apple'")
-  }
-
   object@marray
   })
 
