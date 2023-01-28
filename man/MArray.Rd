@@ -4,7 +4,7 @@
 \alias{marray}
 \title{Accessor function for the 'marray' slot of an MArray object}
 \usage{
-marray(object, ...)
+marray(object)
 }
 \arguments{
 \item{object}{An object of class MArray}
