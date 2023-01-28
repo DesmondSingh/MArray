@@ -1,4 +1,5 @@
 #' @title Accessor function for the 'marray' slot of an MArray object
+#' @rdname marraySlot
 #' @param object An object of class MArray
 #' @return A matrix of Micro array data
 #' @export
@@ -35,6 +36,7 @@ setMethod("fmeta", "MArray", function(object) object@fmeta)
 #' @param object An object of class MArray
 #' @param value An item you wish to assign to the 'marray' slot
 #' @return An MArray object with its 'marray' slot updated
+#' @rdname marraySlot
 #' @export
 #' @importFrom methods setMethod new validObject show
 #' @examples
