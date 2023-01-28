@@ -6,6 +6,9 @@
 \usage{
 fmeta(object)
 }
+\arguments{
+\item{object}{An object of class MArray}
+}
 \description{
 Accessor function for the 'fmeta' slot of an MArray object
 }

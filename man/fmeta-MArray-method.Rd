@@ -6,6 +6,9 @@
 \usage{
 \S4method{fmeta}{MArray}(object)
 }
+\arguments{
+\item{object}{An object of class MArray}
+}
 \value{
 A dataframe of feature meta data
 }

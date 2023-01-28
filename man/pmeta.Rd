@@ -6,6 +6,9 @@
 \usage{
 pmeta(object)
 }
+\arguments{
+\item{object}{An object of class MArray}
+}
 \description{
 Accessor function for the 'pmeta' slot of an MArray object
 }

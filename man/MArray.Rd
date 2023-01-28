@@ -6,6 +6,9 @@
 \usage{
 marray(object, ...)
 }
+\arguments{
+\item{object}{An object of class MArray}
+}
 \description{
 Accessor function for the 'marray' slot of an MArray object
 }
