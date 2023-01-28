@@ -10,7 +10,7 @@
 #' marray(ma_obj)
 setMethod("marray", "MArray", function(object){
 
-  stopifnot("'marray()' only accepts 'MArray' objects"=class(object) == "MArray")
+  stopifnot(class(object) == "MArray")
 
   object@marray
   })
