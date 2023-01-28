@@ -4,7 +4,7 @@
 #' @param n_features The number of genes to simulate (must be a positive, even integer value)
 #' @param with_seed A numeric input to set the seed of the session (defaults to '8675309')
 #'
-#' @return A list of 1 matrix ('mdata' - simulated Micro array data), and 2 data frames (1 for sample metadata -- 'pmeta' -- and another for gene metadata -- 'fmeta')
+#' @return A list of 1 matrix ('marray' - simulated Micro array data), and 2 data frames (1 for sample metadata -- 'pmeta' -- and another for gene metadata -- 'fmeta')
 #' @export
 #' @importFrom stats rnorm
 #'
@@ -26,20 +26,20 @@ MakeMArrayDataSet <- function(n_samples = 10L, n_features = 6L, with_seed = 8675
   n <- n_features
   m <- n_samples
 
-  mdata <- matrix(rnorm(n * m, 10, 5), ncol = m)
+  marray <- matrix(rnorm(n * m, 10, 5), ncol = m)
   pmeta <- data.frame(sampleId = 1:m,
                       condition = rep(c("WT", "MUT"), each = m/2))
-  rownames(pmeta) <- colnames(mdata) <- LETTERS[1:m]
+  rownames(pmeta) <- colnames(marray) <- LETTERS[1:m]
   fmeta <- data.frame(geneId = 1:n,
                       pathway = sample(LETTERS, n, replace = TRUE))
   rownames(fmeta) <-
-    rownames(mdata) <- paste0("probe", 1:n)
+    rownames(marray) <- paste0("probe", 1:n)
 
-  maexp <- list(mdata = mdata,
+  maexp <- list(marray = marray,
                 fmeta = fmeta,
                 pmeta = pmeta)
 
-  rm(mdata, fmeta, pmeta) ## clean up
+  rm(marray, fmeta, pmeta) ## clean up
 
   return(maexp)
 
