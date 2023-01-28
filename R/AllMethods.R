@@ -10,8 +10,8 @@
 #' marray(ma_obj)
 setMethod("marray", "MArray", function(object){
 
-  if (object == "apple"){
-    stop("Cannot be apple")
+  if(object == "apple"){
+    stop("Object must NOT be 'apple'")
   }
 
   object@marray
