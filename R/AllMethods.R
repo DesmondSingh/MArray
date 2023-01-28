@@ -10,7 +10,7 @@
 #' marray(ma_obj)
 setMethod("marray", "MArray", function(object){
 
-  stopifnot("test error message"=class(object) == "MArray")
+  stopifnot(class(object) == "MArray")
 
   object@marray
   })
