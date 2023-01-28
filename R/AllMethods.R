@@ -1,5 +1,4 @@
 #' @title Accessor function for the 'marray' slot of an MArray object
-#' @param object An object of class MArray
 #' @return A matrix of Micro array data
 #' @export
 #' @importFrom methods setMethod new validObject show
@@ -10,7 +9,6 @@
 setMethod("marray", "MArray", function(object){object@marray})
 
 #' @title Accessor function for the 'pmeta' slot of an MArray object
-#' @param object An object of class MArray
 #' @return A dataframe of sample meta data
 #' @export
 #' @importFrom methods setMethod new validObject show
@@ -21,7 +19,6 @@ setMethod("marray", "MArray", function(object){object@marray})
 setMethod("pmeta", "MArray", function(object) object@pmeta)
 
 #' @title Accessor function for the 'fmeta' slot of an MArray object
-#' @param object An object of class MArray
 #' @return A dataframe of feature meta data
 #' @export
 #' @importFrom methods setMethod new validObject show
