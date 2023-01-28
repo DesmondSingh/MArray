@@ -10,7 +10,9 @@
 #' marray(ma_obj)
 setMethod("marray", "MArray", function(object){
 
-  stopifnot( class(object) == "MArray" )
+  if (object == "apple"){
+    stop("Cannot be apple")
+  }
 
   object@marray
   })
