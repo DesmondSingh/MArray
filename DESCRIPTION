@@ -7,7 +7,6 @@ Maintainer: The package maintainer <d6ahuja@uwaterloo.ca>
 Description: Simulates Micro Array Data  & Meta Data.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: false
 RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
