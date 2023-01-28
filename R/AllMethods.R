@@ -10,7 +10,9 @@
 #' marray(ma_obj)
 setMethod("marray", "MArray", function(object){
 
-  stopifnot("Charval error" = (class(object) == "MArray") )
+  if(class(object) != "MArray"){
+    stop("Object must be class 'MArray'")
+  }
 
   object@marray
   })
