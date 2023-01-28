@@ -3,7 +3,7 @@
 #' @param pmeta dataframe
 #' @param fmeta dataframe
 #' @return Object of class "MArray"
-#' @aliases MArray
+#' @aliases MArray-Class
 #' @docType class
 #' @examples
 #' ma <- MakeMArrayDataSet(n_samples = 16L, n_features = 12L, with_seed = 8675)
