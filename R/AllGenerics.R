@@ -19,20 +19,20 @@ setGeneric("fmeta", function(object) standardGeneric("fmeta"))
 #' @title Replacement method for the 'marray' slot of an MArray object
 #' @param object An object of class MArray
 #' @param value Replacement item
-#' @rdname marray<-
+#' @rdname marray
 #' @export
 setGeneric("marray<-", function(object, value) standardGeneric("marray<-"))
 
 #' @title Replacement method for the 'fmeta' slot of an MArray object
 #' @param object An object of class MArray
 #' @param value Replacement item
-#' @rdname fmeta<-
+#' @rdname fmeta
 #' @export
 setGeneric("fmeta<-", function(object, value) standardGeneric("fmeta<-"))
 
 #' @title Replacement method for the 'pmeta' slot of an MArray object
 #' @param object An object of class MArray
 #' @param value Replacement item
-#' @rdname pmeta<-
+#' @rdname pmeta
 #' @export
 setGeneric("pmeta<-", function(object, value) standardGeneric("pmeta<-"))
